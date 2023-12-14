@@ -1,0 +1,649 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+
+\section*{Question 1}
+\[
+    y'' - 2y' - 3y = 3e^{2x}
+\]
+We begin by first solving the homogeneous equation:
+\[
+    y'' - 2y' - 3y = 0
+\]
+We can solve this by using the characteristic equation:
+\[
+    r^2 - 2r - 3 = 0
+\]
+\[
+    (r - 3)(r + 1) = 0
+\]
+\[
+    r = 3, -1
+\]
+Therefore, the homogeneous solution is:
+\[
+    y_h = c_1e^{3x} + c_2e^{-x}
+\]
+Now, we can use the method of undetermined coefficients to find a particular solution to the nonhomogeneous equation. We guess that the particular solution is of the form:
+\[
+    y_p = Ae^{2x}
+\]
+Now, we can find the first and second derivatives of $y_p$:
+\[
+    y_p' = 2Ae^{2x}
+\]
+\[
+    y_p'' = 4Ae^{2x}
+\]
+Plugging these into the original equation, we get:
+\[
+    (4Ae^{2x}) - 2(2Ae^{2x}) - 3(Ae^{2x}) = 3e^{2x}
+\]
+\[
+    4Ae^{2x} - 4Ae^{2x} - 3Ae^{2x} = 3e^{2x}
+\]
+\[
+    -3Ae^{2x} = 3e^{2x}
+\]
+\[
+    A = -1
+\]
+Therefore, the particular solution is:
+\[
+    y_p = -e^{2x}
+\]
+Now, we can find the general solution by adding the homogeneous and particular solutions:
+\[
+    y = y_h + y_p
+\]
+\[
+    y = c_1e^{3x} + c_2e^{-x} - e^{2x}
+\]
+\[
+    y = e^{3x}(c_1 + c_2e^{-4x} - e^{-x})
+\]
+This is the general solution to the nonhomogeneous equation.
+
+
+\section*{Question 2}
+\[
+y'' + 6y' + 9y = e^{-3x}
+\]
+We begin by first solving the homogeneous equation:
+\[
+y'' + 6y' + 9y = 0
+\]
+We can solve this by using the characteristic equation:
+\[
+r^2 + 6r + 9 = 0
+\]
+\[
+(r + 3)^2 = 0
+\]
+\[
+r = -3
+\]
+Therefore, the homogeneous solution is:
+\[
+y_h = c_1e^{-3x} + c_2xe^{-3x}
+\]
+Now, we can use the method of undetermined coefficients to find a particular solution to the nonhomogeneous equation. We guess that the particular solution is of the form:
+\[
+y_p = Ae^{-3x}
+\]
+This guess won't work because $e^{-3x}$ is a solution to the homogeneous equation ($c_1e^{-3x}$).
+\\
+\\Therefore, we must multiply our guess by $x$:
+\[
+y_p = Axe^{-3x}
+\]
+This guess won't work either because $e^{-3x}$ is also a solution to the homogeneous equation ($c_2xe^{-3x}$).
+\\Therefore, we must multiply our guess by $x^2$:
+
+\[
+y_p = Ax^{2}e^{-3x}
+\]
+Now, we can find the first and second derivatives of $y_p$:
+\[
+y_p' = 2Axe^{-3x} - 3Ax^{2}e^{-3x}
+\]
+\[
+y_p'' = 9Ax^{2}e^{-3x} - 12Axe^{-3x} + 2Ae^{-3x}
+\]
+Plugging these into the original equation, we get:
+\[
+    (9Ax^{2}e^{-3x} - 12Axe^{-3x} + 2Ae^{-3x}) + 6(2Axe^{-3x} - 3Ax^{2}e^{-3x}) + 9(Ax^{2}e^{-3x}) = e^{-3x}
+\]
+\[
+    9Ax^{2}e^{-3x} - 12Axe^{-3x} + 2Ae^{-3x} + 12Axe^{-3x} - 18Ax^{2}e^{-3x} + 9Ax^{2}e^{-3x} = e^{-3x}
+\]
+\[
+    2Ae^{-3x} = e^{-3x}
+\]
+\[
+    A = \frac{1}{2}
+\]
+Therefore, the particular solution is:
+\[
+y_p = \frac{1}{2}x^{2}e^{-3x}
+\]
+Now, we can find the general solution by adding the homogeneous and particular solutions:
+\[
+y = y_h + y_p
+\]
+\[
+y = c_1e^{-3x} + c_2xe^{-3x} + \frac{1}{2}x^{2}e^{-3x}
+\]
+\[
+y = e^{-3x}(c_1 + c_2x + \frac{1}{2}x^{2})
+\]
+This is the general solution to the nonhomogeneous equation.
+
+\section*{Question 3}
+\[
+2y'' + 3y' + y = x^{2} + 3sin(x)
+\]
+We begin by first solving the homogeneous equation:
+\[
+2y'' + 3y' + y = 0
+\]
+We can solve this by using the characteristic equation:
+\[
+2r^2 + 3r + 1 = 0
+\]
+\[
+(2r + 1)(r + 1) = 0
+\]
+\[
+r = -\frac{1}{2}, -1
+\]
+Therefore, the homogeneous solution is:
+\[
+y_h = c_1e^{-\frac{1}{2}x} + c_2e^{-x}
+\]
+Now, we can use the method of undetermined coefficients to find a particular solution to the nonhomogeneous equation. We guess that the particular solution is of the form:
+\[
+y_p = Ax^{2} + Bx + C + Dsin(x) + Ecos(x)
+\]
+Now, we can find the first and second derivatives of $y_p$:
+\[
+y_p' = 2Ax + B + Dcos(x) - Esin(x)
+\]
+\[
+y_p'' = 2A - Dsin(x) - Ecos(x)
+\]
+Plugging these into the original equation, we get:
+
+\begin{align*}
+&2(2A - D\sin(x) - E\cos(x)) + 3(2Ax + B + D\cos(x) - E\sin(x)) \\
+&\quad + Ax^{2} + Bx + C + D\sin(x) + E\cos(x) = x^{2} + 3\sin(x)
+\end{align*}
+\begin{align*}
+&4A - 2D\sin(x) - 2E\cos(x) + 6Ax + 3B + 3D\cos(x) - 3E\sin(x) \\
+&\quad + Ax^{2} + Bx + C + D\sin(x) + E\cos(x) = x^{2} + 3\sin(x)
+\end{align*}
+\[
+Ax^{2}+(6A+B)x+(-2D-3E+D)\sin x+(-2E+3D+E)\cos x+(4A+3B+C)=x^{2}+3\sin x
+\]
+\[
+Ax^{2}+(6A+B)x+(-D-3E)\sin x+(-E+3D)\cos x+(4A+3B+C)=x^{2}+3\sin x
+\]
+\[
+A=1
+\]
+\[
+6A+B=0
+\]
+\[
+B=-6
+\]
+\[
+4A+3B+C=0
+\]
+\[
+C=14
+\]
+\[
+-3E-D=3
+\]
+\[
+-E+3D=0
+\]
+\[
+D=-\frac{3}{10}
+\]
+\[
+E=-\frac{9}{10}
+\]
+Therefore, the particular solution is:
+\[
+y_p = x^{2} - 6x + 14 - \frac{3}{10}sin(x) - \frac{9}{10}cos(x)
+\]
+Now, we can find the general solution by adding the homogeneous and particular solutions:
+\[
+y = y_h + y_p
+\]
+\[
+y = c_1e^{-\frac{1}{2}x} + c_2e^{-x} + x^{2} - 6x + 14 - \frac{3}{10}sin(x) - \frac{9}{10}cos(x)
+\]
+\[
+y = e^{-\frac{1}{2}x}(c_1 + c_2e^{-\frac{1}{2}x}) + x^{2} - 6x + 14 - \frac{3}{10}sin(x) - \frac{9}{10}cos(x)
+\]
+This is the general solution to the nonhomogeneous equation.
+
+\section*{Question 4}
+
+\[
+y'' - 2y' + 5y = e^{-x}sin(2x)
+\]
+
+We begin by first solving the homogeneous equation:
+\[
+y'' - 2y' + 5y = 0
+\]
+We can solve this by using the characteristic equation:
+\[
+r^2 - 2r + 5 = 0
+\]
+\[
+(r - 1)^2 + 4 = 0
+\]
+\[
+r = 1 \pm 2i
+\]
+Therefore, the homogeneous solution is:
+\[
+y_h = c_1e^{x}cos(2x) + c_2e^{x}sin(2x)
+\]
+Now, we can use the method of undetermined coefficients to find a particular solution to the nonhomogeneous equation. We guess that the particular solution is of the form:
+\[
+y_p = Ae^{-x}sin(2x) + Be^{-x}cos(2x)
+\]
+Now, we can find the first and second derivatives of $y_p$:
+\[
+y_p' = -Ae^{-x}sin(2x) + 2Ae^{-x}cos(2x) - Be^{-x}cos(2x) - 2Be^{-x}sin(2x)
+\] %checked by PM solver
+\[
+y_p'' = -3Ae^{-x}sin(2x) - 4Ae^{-x}cos(2x) - 3Be^{-x}cos(2x) + 4Be^{-x}sin(2x)
+\] %checked by PM solver
+Plugging these into the original equation, we get:
+% (-3Ae^{-x}sin(2x) - 4Ae^{-x}cos(2x) - 3Be^{-x}cos(2x) + 4Be^{-x}sin(2x)) - 2(-Ae^{-x}sin(2x) + 2Ae^{-x}cos(2x) - Be^{-x}cos(2x) - 2Be^{-x}sin(2x)) + 5(Ae^{-x}sin(2x) + Be^{-x}cos(2x)) = (e^{-x}sin(2x))
+%checked by PM solver
+\begin{align*}
+    & (-3Ae^{-x}\sin(2x) - 4Ae^{-x}\cos(2x) - 3Be^{-x}\cos(2x) + 4Be^{-x}\sin(2x)) \\
+    & \quad - 2(-Ae^{-x}\sin(2x) + 2Ae^{-x}\cos(2x) - Be^{-x}\cos(2x) - 2Be^{-x}\sin(2x)) \\
+    & \quad + 5(Ae^{-x}\sin(2x) + Be^{-x}\cos(2x)) = e^{-x}\sin(2x)
+\end{align*}
+%checked by PM solver
+\[
+    4Ae^{-x}\sin(2x) - 8Ae^{-x}\cos(2x) + 4Be^{-x}\cos(2x) + 8Be^{-x}\sin(2x) = e^{-x}\sin(2x)
+\]
+%pretty simple
+\[
+    4A+8B=1
+\]
+\[
+    -8A+4B=0
+\]
+%pretty simple
+\[
+    A=\frac{1}{20}
+\]
+\[
+    B=\frac{1}{40}
+\]
+Therefore, the particular solution is:
+\[
+y_p = \frac{1}{20}e^{-x}sin(2x) + \frac{1}{40}e^{-x}cos(2x)
+\]
+Now, we can find the general solution by adding the homogeneous and particular solutions:
+\[
+y = y_h + y_p
+\]
+\[
+y = c_1e^{x}cos(2x) + c_2e^{x}sin(2x) + \frac{1}{20}e^{-x}sin(2x) + \frac{1}{40}e^{-x}cos(2x)
+\]
+\[
+y = e^{x}(c_1cos(2x) + c_2sin(2x)) + \frac{1}{20}e^{-x}sin(2x) + \frac{1}{40}e^{-x}cos(2x)
+\]
+This is the general solution to the nonhomogeneous equation.
+
+\section*{Question 5}
+\[
+y'' + y'  - 2y = x^{3} + x
+\]
+
+We begin by first solving the homogeneous equation:
+\[
+y'' + y'  - 2y = 0
+\]
+We can solve this by using the characteristic equation:
+\[
+r^2 + r - 2 = 0
+\]
+\[
+(r + 2)(r - 1) = 0
+\]
+\[
+r = -2, 1
+\]
+Therefore, the homogeneous solution is:
+\[
+y_h = c_1e^{-2x} + c_2e^{x}
+\]
+Now, we can use the method of undetermined coefficients to find a particular solution to the nonhomogeneous equation. 
+Since the non homogeneous part is a sum of two terms, we can find the particular solution by finding the particular solution to each term and adding them together.
+\\
+\\We guess that the particular solution to the first term is of the form:
+\[
+y_{p1} = Ax^{3} + Bx^{2} + Cx + D
+\]
+Now, we can find the first and second derivatives of $y_{p1}$:
+\[
+y_{p1}' = 3Ax^{2} + 2Bx + C
+\]
+\[
+y_{p1}'' = 6Ax + 2B
+\]
+Plugging these into the original equation, we get:
+\[
+(6Ax + 2B) + (3Ax^{2} + 2Bx + C) - 2(Ax^{3} + Bx^{2} + Cx + D) = x^{3}
+\]
+\[
+6Ax + 2B + 3Ax^{2} + 2Bx + C - 2Ax^{3} - 2Bx^{2} - 2Cx - 2D = x^{3}
+\]
+\[
+    x^{3}(-2A) + x^{2}(3A - 2B) + x(6A + 2B - 2C) + (2B + C - 2D) = x^{3}
+\]
+\[
+    -2A = 1
+\]
+\[
+    3A - 2B = 0
+\]
+\[
+    6A + 2B - 2C = 0
+\]
+\[
+    2B + C - 2D = 0
+\]
+\[
+    A = -\frac{1}{2}
+\]
+\[
+    B = -\frac{3}{4}
+\]
+\[
+    C = -\frac{3}{4}
+\]
+\[
+    D = -\frac{1}{2}
+\]
+Therefore, the particular solution to the first term is:
+\[
+y_{p1} = -\frac{1}{2}x^{3} - \frac{3}{4}x^{2} - \frac{3}{4}x - \frac{1}{2}
+\]
+\\We guess that the particular solution to the second term is of the form:
+\[
+y_{p2} = Ex + F
+\]
+Now, we can find the first and second derivatives of $y_{p2}$:
+\[
+y_{p2}' = E
+\]
+\[
+y_{p2}'' = 0
+\]
+Plugging these into the original equation, we get:
+\[
+0 + E - 2(Ex + F) = x
+\]
+\[
+    -2Ex - 2F = x
+\]
+\[
+    E = -\frac{1}{2}
+\]
+\[
+    F = 0
+\]
+Therefore, the particular solution to the second term is:
+\[
+y_{p2} = -\frac{1}{2}x
+\]
+Now, we can find the general solution by adding the homogeneous and particular solutions:
+\[
+y = y_h + y_{p1} + y_{p2}
+\]
+\[
+y = c_1e^{-2x} + c_2e^{x} -\frac{1}{2}x^{3} - \frac{3}{4}x^{2} - \frac{3}{4}x - \frac{1}{2} -\frac{1}{2}x
+\]
+\[
+y = e^{-2x}(c_1 + c_2e^{3x}) -\frac{1}{2}x^{3} - \frac{7}{4}x^{2} - \frac{5}{4}x - \frac{1}{2}
+\]
+This is the general solution to the nonhomogeneous equation.
+
+\section*{Question 6}
+\[
+y'' - y' - 2y = 2\sin(2x) ; y(0) = 1, y'(0) = -1
+\]
+
+We begin by first solving the homogeneous equation:
+\[
+y'' - y' - 2y = 0
+\]
+We can solve this by using the characteristic equation:
+\[
+r^2 - r - 2 = 0
+\]
+\[
+(r - 2)(r + 1) = 0
+\]
+\[
+r = 2, -1
+\]
+Therefore, the homogeneous solution is:
+\[
+y_h = c_1e^{2x} + c_2e^{-x}
+\]
+
+Now, we can use the method of undetermined coefficients to find a particular solution to the nonhomogeneous equation. We guess that the particular solution is of the form:
+\[
+y_p = A\sin(2x) + B\cos(2x)
+\]
+Now, we can find the first and second derivatives of $y_p$:
+\[
+y_p' = 2A\cos(2x) - 2B\sin(2x)
+\]
+\[
+y_p'' = -4A\sin(2x) - 4B\cos(2x)
+\]
+Plugging these into the original equation, we get:
+\[
+(-4A\sin(2x) - 4B\cos(2x)) - (2A\cos(2x) - 2B\sin(2x)) - 2(A\sin(2x) + B\cos(2x)) = 2\sin(2x)
+\]
+\[
+-4A\sin(2x) - 4B\cos(2x) - 2A\cos(2x) + 2B\sin(2x) - 2A\sin(2x) - 2B\cos(2x) = 2\sin(2x)
+\]
+\[
+    2\sin(2x)(-2A + 2B - 1) + 2\cos(2x)(-2B - 2A - 2) = 2\sin(2x)
+\]
+\[
+    -2A + 2B - 1 = 0
+\]
+\[
+    -2B - 2A - 2 = 0
+\]
+\[
+    A = -\frac{1}{2}
+\]
+\[
+    B = \frac{1}{2}
+\]
+Therefore, the particular solution is:
+\[
+y_p = -\frac{1}{2}\sin(2x) + \frac{1}{2}\cos(2x)
+\]
+Now, we can find the general solution by adding the homogeneous and particular solutions:
+\[
+y = y_h + y_p
+\]
+\[
+y = c_1e^{2x} + c_2e^{-x} -\frac{1}{2}\sin(2x) + \frac{1}{2}\cos(2x)
+\]
+Now, we can find the particular solution by plugging in the initial conditions:
+\[
+1 = c_1 + c_2 -\frac{1}{2}\sin(0) + \frac{1}{2}\cos(0)
+\]
+\[
+1 = c_1 + c_2 -\frac{1}{2}(0) + \frac{1}{2}(1)
+\]
+\[
+1 = c_1 + c_2 + \frac{1}{2}
+\]
+\[
+c_1 + c_2 = \frac{1}{2}
+\]
+\[
+-1 = 2c_1 - c_2 -\frac{1}{2}\cos(0) - \frac{1}{2}\sin(0)
+\]
+\[
+-1 = 2c_1 - c_2 -\frac{1}{2}(1) - \frac{1}{2}(0)
+\]
+\[
+-1 = 2c_1 - c_2 -\frac{1}{2}
+\]
+\[
+2c_1 - c_2 = -\frac{1}{2}
+\]
+\[
+c_1 = \frac{1}{4}
+\]
+\[
+c_2 = \frac{1}{4}
+\]
+Therefore, the particular solution is:
+\[
+y = \frac{1}{4}e^{2x} + \frac{1}{4}e^{-x} -\frac{1}{2}\sin(2x) + \frac{1}{2}\cos(2x)
+\]
+This is the solution to the nonhomogeneous equation.
+
+\section*{Question 7}
+\[
+y'' - 2y' + y = xe^{x} + 4 ; y(0) = 1, y'(0) = 1
+\]
+
+We begin by first solving the homogeneous equation:
+\[
+y'' - 2y' + y = 0
+\]
+We can solve this by using the characteristic equation:
+\[
+r^2 - 2r + 1 = 0
+\]
+\[
+(r - 1)^2 = 0
+\]
+\[
+r = 1
+\]
+Therefore, the homogeneous solution is:
+\[
+y_h = c_1e^{x} + c_2xe^{x}
+\]
+
+Now, we can use the method of undetermined coefficients to find a particular solution to the nonhomogeneous equation.
+\\We guess that the particular solution to the first term is of the form:
+\[
+y_{p1} = (Ax + B)e^{x}
+\]
+Now, we can find the first and second derivatives of $y_{p1}$:
+\[
+y_{p1}' = Ae^{x} + (Ax + B)e^{x}
+\]
+\[
+y_{p1}'' = 2Ae^{x} + (Ax + B)e^{x}
+\]
+Plugging these into the original equation, we get:
+\[
+(2Ae^{x} + (Ax + B)e^{x}) - 2(Ae^{x} + (Ax + B)e^{x}) + (Ax + B)e^{x} = xe^{x}
+\]
+\[
+2Ae^{x} + Ax^{2}e^{x} + Bxe^{x} - 2Ae^{x} - 2Ax^{2}e^{x} - 2Bxe^{x} + Ax^{2}e^{x} + Bxe^{x} = xe^{x}
+\]
+\[
+    2Ax^{2}e^{x} - 2Ax^{2}e^{x} + Ax^{2}e^{x} + Bxe^{x} - 2Bxe^{x} = xe^{x}
+\]
+\[
+    Ax^{2}e^{x} - Bxe^{x} = xe^{x}
+\]
+\[
+    A = 1
+\]
+\[
+    B = -1
+\]
+Therefore, the particular solution to the first term is:
+\[
+y_{p1} = (x - 1)e^{x}
+\]
+\\We guess that the particular solution to the second term is of the form:
+\[
+y_{p2} = C
+\]
+Now, we can find the first and second derivatives of $y_{p2}$:
+\[
+y_{p2}' = 0
+\]
+\[
+y_{p2}'' = 0
+\]
+Plugging these into the original equation, we get:
+\[
+0 - 2(0) + C = 4
+\]
+\[
+    C = 4
+\]
+Therefore, the particular solution to the second term is:
+\[
+y_{p2} = 4
+\]
+Now, we can find the general solution by adding the homogeneous and particular solutions:
+\[
+y = y_h + y_{p1} + y_{p2}
+\]
+\[
+y = c_1e^{x} + c_2xe^{x} + (x - 1)e^{x} + 4
+\]
+Now, we can find the particular solution by plugging in the initial conditions:
+$y(0) = 1$
+\[
+1 = c_1 + c_2(0) + (0 - 1)(1) + 4
+\]
+\[
+1 = c_1 + 3
+\]
+\[
+c_1 = -2
+\]
+$y'(0) = 1$
+\[
+    1 = c_1(1) + c_2(1) + c_2(0)(1) + 0
+\]
+\[
+    1 = -2 + c_2
+\]
+\[
+    c_2 = 3
+\]
+Therefore, the particular solution is:
+\[
+y = -2e^{x} + 3xe^{x} + (x - 1)e^{x} + 4
+\]
+This is the solution to the nonhomogeneous equation.
+
+
+
+\end{document}
