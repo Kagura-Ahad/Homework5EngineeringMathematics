@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.10.20)  15 DEC 2023 04:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.10.20)  15 DEC 2023 14:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -120,22 +120,17 @@ Overfull \hbox (35.62384pt too wide) detected at line 188
 \OML/cmm/m/it/10 Ax[] \OT1/cmr/m/n/10 + (6\OML/cmm/m/it/10 A \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 B\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 + (\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 D \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 3\OML/cmm/m/it/10 E \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 D\OT1/cmr/m/n/10 ) [] \OML/cmm/m/it/10 x \OT1/cmr/m/n/10 + (\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 E \OT1/cmr/m/n/10 + 3\OML/cmm/m/it/10 D \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 E\OT1/cmr/m/n/10 ) [] \OML/cmm/m/it/10 x \OT1/cmr/m/n/10 + (4\OML/cmm/m/it/10 A \OT1/cmr/m/n/10 + 3\OML/cmm/m/it/10 B \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 C\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 x[] \OT1/cmr/m/n/10 + 3 [] \OML/cmm/m/it/10 x
  []
 
-[4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 334--339
-
- []
-
-[6] [7]
-Overfull \hbox (45.4899pt too wide) detected at line 465
+[4] [5] [6] [7]
+Overfull \hbox (45.4899pt too wide) detected at line 446
 \OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 4\OML/cmm/m/it/10 A []\OT1/cmr/m/n/10 (2\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 4\OML/cmm/m/it/10 B []\OT1/cmr/m/n/10 (2\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )) \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 (2\OML/cmm/m/it/10 A []\OT1/cmr/m/n/10 (2\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 B []\OT1/cmr/m/n/10 (2\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )) \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 2(\OML/cmm/m/it/10 A []\OT1/cmr/m/n/10 (2\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) + \OML/cmm/m/it/10 B []\OT1/cmr/m/n/10 (2\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )) = 2 [](2\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )
  []
 
 
-Overfull \hbox (27.15651pt too wide) detected at line 468
+Overfull \hbox (27.15651pt too wide) detected at line 449
 \OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 4\OML/cmm/m/it/10 A []\OT1/cmr/m/n/10 (2\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 4\OML/cmm/m/it/10 B []\OT1/cmr/m/n/10 (2\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 A []\OT1/cmr/m/n/10 (2\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) + 2\OML/cmm/m/it/10 B []\OT1/cmr/m/n/10 (2\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 A []\OT1/cmr/m/n/10 (2\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 B []\OT1/cmr/m/n/10 (2\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = 2 [](2\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )
  []
 
-[8] [9] [10] [11] (EMhomework5.aux)
+[8] [9] [10] (EMhomework5.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-10-10>
@@ -150,9 +145,9 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  56i,8n,65p,253b,129s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on EMhomework5.pdf (11 pages, 110131 bytes).
+Output written on EMhomework5.pdf (10 pages, 108344 bytes).
 PDF statistics:
- 78 PDF objects out of 1000 (max. 8388607)
+ 75 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

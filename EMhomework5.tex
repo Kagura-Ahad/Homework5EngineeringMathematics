@@ -333,94 +333,75 @@ Therefore, the homogeneous solution is:
 y_h = c_1e^{-2x} + c_2e^{x}
 \]
 Now, we can use the method of undetermined coefficients to find a particular solution to the nonhomogeneous equation. 
-Since the non homogeneous part is a sum of two terms, we can find the particular solution by finding the particular solution to each term and adding them together.
-\\
-\\We guess that the particular solution to the first term is of the form:
 \[
-y_{p1} = Ax^{3} + Bx^{2} + Cx + D
+y_p = Ax^{3} + Bx^{2} + Cx + D
 \]
-Now, we can find the first and second derivatives of $y_{p1}$:
+Now, we can find the first and second derivatives of $y_p$:
 \[
-y_{p1}' = 3Ax^{2} + 2Bx + C
+y_p' = 3Ax^{2} + 2Bx + C
 \]
 \[
-y_{p1}'' = 6Ax + 2B
+y_p'' = 6Ax + 2B
 \]
 Plugging these into the original equation, we get:
 \[
-(6Ax + 2B) + (3Ax^{2} + 2Bx + C) - 2(Ax^{3} + Bx^{2} + Cx + D) = x^{3}
+(6Ax + 2B) + (3Ax^{2} + 2Bx + C) - 2(Ax^{3} + Bx^{2} + Cx + D) = x^{3} + x
 \]
 \[
-6Ax + 2B + 3Ax^{2} + 2Bx + C - 2Ax^{3} - 2Bx^{2} - 2Cx - 2D = x^{3}
+6Ax + 2B + 3Ax^{2} + 2Bx + C - 2Ax^{3} - 2Bx^{2} - 2Cx - 2D = x^{3} + x
 \]
 \[
-    x^{3}(-2A) + x^{2}(3A - 2B) + x(6A + 2B - 2C) + (2B + C - 2D) = x^{3}
+    x^{3}(3A - 2A) + x^{2}(2B - 2B - 2C) + x(6A + 2B - 2D) + (2B + C) = x^{3} + x
 \]
 \[
-    -2A = 1
+    3A - 2A = 1
 \]
 \[
-    3A - 2B = 0
+    A = 1
 \]
 \[
-    6A + 2B - 2C = 0
+    2B - 2B - 2C = 0
 \]
 \[
-    2B + C - 2D = 0
+    -2C = 0
 \]
 \[
-    A = -\frac{1}{2}
+    C = 0
 \]
 \[
-    B = -\frac{3}{4}
+    6A + 2B - 2D = 0
 \]
 \[
-    C = -\frac{3}{4}
+    2B - 2D = -6
 \]
 \[
-    D = -\frac{1}{2}
-\]
-Therefore, the particular solution to the first term is:
-\[
-y_{p1} = -\frac{1}{2}x^{3} - \frac{3}{4}x^{2} - \frac{3}{4}x - \frac{1}{2}
-\]
-\\We guess that the particular solution to the second term is of the form:
-\[
-y_{p2} = Ex + F
-\]
-Now, we can find the first and second derivatives of $y_{p2}$:
-\[
-y_{p2}' = E
+    B - D = -3
 \]
 \[
-y_{p2}'' = 0
-\]
-Plugging these into the original equation, we get:
-\[
-0 + E - 2(Ex + F) = x
+    2B + C = 1
 \]
 \[
-    -2Ex - 2F = x
+    2B = 1
 \]
 \[
-    E = -\frac{1}{2}
+    B = \frac{1}{2}
 \]
 \[
-    F = 0
+    D = \frac{7}{2}
 \]
-Therefore, the particular solution to the second term is:
+Therefore, the particular solution is:
 \[
-y_{p2} = -\frac{1}{2}x
+y_p = x^{3} + \frac{1}{2}x^{2} + \frac{7}{2}
 \]
 Now, we can find the general solution by adding the homogeneous and particular solutions:
 \[
-y = y_h + y_{p1} + y_{p2}
+y = y_h + y_p
 \]
 \[
-y = c_1e^{-2x} + c_2e^{x} -\frac{1}{2}x^{3} - \frac{3}{4}x^{2} - \frac{3}{4}x - \frac{1}{2} -\frac{1}{2}x
+y = c_1e^{-2x} + c_2e^{x} + x^{3} + \frac{1}{2}x^{2} + \frac{7}{2}
 \]
 \[
-y = e^{-2x}(c_1 + c_2e^{3x}) -\frac{1}{2}x^{3} - \frac{7}{4}x^{2} - \frac{5}{4}x - \frac{1}{2}
+y = e^{-2x}(c_1 + c_2e^{3x}) + x^{3} + \frac{1}{2}x^{2} + \frac{7}{2}
 \]
 This is the general solution to the nonhomogeneous equation.
 
@@ -554,96 +535,55 @@ y_h = c_1e^{x} + c_2xe^{x}
 \]
 
 Now, we can use the method of undetermined coefficients to find a particular solution to the nonhomogeneous equation.
-\\We guess that the particular solution to the first term is of the form:
+\\We guess that the particular solution is of the form:
 \[
-y_{p1} = (Ax + B)e^{x}
+y_p = (Ax + B)e^{x} + C
 \]
-Now, we can find the first and second derivatives of $y_{p1}$:
+Since $ce^{x}$ is a solution to the homogeneous equation, we must multiply our guess by $x$:
 \[
-y_{p1}' = Ae^{x} + (Ax + B)e^{x}
+y_p = (Ax^{2} + Bx)e^{x} + C
 \]
+Since $cxe^{x}$ is also a solution to the homogeneous equation, we must multiply our guess by $x^{2}$ again:
 \[
-y_{p1}'' = 2Ae^{x} + (Ax + B)e^{x}
+y_p = Ax^{3}e^{x} + Bx^{2}e^{x} + C
 \]
-Plugging these into the original equation, we get:
+Now, we can find the first and second derivatives of $y_p$:
 \[
-(2Ae^{x} + (Ax + B)e^{x}) - 2(Ae^{x} + (Ax + B)e^{x}) + (Ax + B)e^{x} = xe^{x}
-\]
-\[
-2Ae^{x} + Ax^{2}e^{x} + Bxe^{x} - 2Ae^{x} - 2Ax^{2}e^{x} - 2Bxe^{x} + Ax^{2}e^{x} + Bxe^{x} = xe^{x}
+y_p' = 3Ax^{2}e^{x} + Ax^{3}e^{x} + 2Bxe^{x} + Bx^{2}e^{x}
 \]
 \[
-    2Ax^{2}e^{x} - 2Ax^{2}e^{x} + Ax^{2}e^{x} + Bxe^{x} - 2Bxe^{x} = xe^{x}
-\]
-\[
-    Ax^{2}e^{x} - Bxe^{x} = xe^{x}
-\]
-\[
-    A = 1
-\]
-\[
-    B = -1
-\]
-Therefore, the particular solution to the first term is:
-\[
-y_{p1} = (x - 1)e^{x}
-\]
-\\We guess that the particular solution to the second term is of the form:
-\[
-y_{p2} = C
-\]
-Now, we can find the first and second derivatives of $y_{p2}$:
-\[
-y_{p2}' = 0
-\]
-\[
-y_{p2}'' = 0
+y_p'' = 6Axe^{x} + 6Ax^{2}e^{x} + Ax^{3}e^{x} + 2Be^{x} + 4Bxe^{x} + Bx^{2}e^{x}
 \]
 Plugging these into the original equation, we get:
-\[
-0 - 2(0) + C = 4
-\]
-\[
-    C = 4
-\]
-Therefore, the particular solution to the second term is:
-\[
-y_{p2} = 4
-\]
-Now, we can find the general solution by adding the homogeneous and particular solutions:
-\[
-y = y_h + y_{p1} + y_{p2}
-\]
-\[
-y = c_1e^{x} + c_2xe^{x} + (x - 1)e^{x} + 4
-\]
-Now, we can find the particular solution by plugging in the initial conditions:
-$y(0) = 1$
-\[
-1 = c_1 + c_2(0) + (0 - 1)(1) + 4
-\]
-\[
-1 = c_1 + 3
-\]
-\[
-c_1 = -2
-\]
-$y'(0) = 1$
-\[
-    1 = c_1(1) + c_2(1) + c_2(0)(1) + 0
-\]
-\[
-    1 = -2 + c_2
-\]
-\[
-    c_2 = 3
-\]
-Therefore, the particular solution is:
-\[
-y = -2e^{x} + 3xe^{x} + (x - 1)e^{x} + 4
-\]
-This is the solution to the nonhomogeneous equation.
+\begin{align*}
+    & (6Axe^{x} + 6Ax^{2}e^{x} + Ax^{3}e^{x} + 2Be^{x} + 4Bxe^{x} + Bx^{2}e^{x}) \\
+    & \quad - 2(3Ax^{2}e^{x} + Ax^{3}e^{x} + 2Bxe^{x} + Bx^{2}e^{x}) + (Ax^{3}e^{x} + Bx^{2}e^{x} + C) = xe^{x} + 4
+\end{align*}
+\begin{align*}
+    & 6Axe^{x} + 6Ax^{2}e^{x} + Ax^{3}e^{x} + 2Be^{x} + 4Bxe^{x} + Bx^{2}e^{x} \\
+    & \quad - 6Ax^{2}e^{x} - 2Ax^{3}e^{x} - 4Bxe^{x} - 2Bx^{2}e^{x} + Ax^{3}e^{x} + Bx^{2}e^{x} + C = xe^{x} + 4
+\end{align*}
+\begin{align*}
+    & x^{3}e^{x}(A - 2A + A) + x^{2}e^{x}(6A - 2B + B - 2B + B) \\
+    & \quad + xe^{x}(6A + 2B - 4B) + e^{x}(2B + C) = xe^{x} + 4
+\end{align*}
 
+\[
+    6A - 2B = 0
+\]
+\[
+    2B + C = 4
+\]
+
+\[
+    A = \frac{1}{3}
+\]
+\[
+    B = \frac{1}{9}
+\]
+\[
+    C = \frac{26}{9}
+\]
 
 
 \end{document}
