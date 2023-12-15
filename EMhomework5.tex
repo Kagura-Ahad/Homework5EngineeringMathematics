@@ -537,15 +537,15 @@ y_h = c_1e^{x} + c_2xe^{x}
 Now, we can use the method of undetermined coefficients to find a particular solution to the nonhomogeneous equation.
 \\We guess that the particular solution is of the form:
 \[
-y_p = (Ax + B)e^{x} + C
+y_p = (Ax + B)e^{x}
 \]
 Since $ce^{x}$ is a solution to the homogeneous equation, we must multiply our guess by $x$:
 \[
-y_p = (Ax^{2} + Bx)e^{x} + C
+y_p = (Ax^{2} + Bx)e^{x}
 \]
 Since $cxe^{x}$ is also a solution to the homogeneous equation, we must multiply our guess by $x^{2}$ again:
 \[
-y_p = Ax^{3}e^{x} + Bx^{2}e^{x} + C
+y_p = Ax^{3}e^{x} + Bx^{2}e^{x}
 \]
 Now, we can find the first and second derivatives of $y_p$:
 \[
@@ -557,33 +557,61 @@ y_p'' = 6Axe^{x} + 6Ax^{2}e^{x} + Ax^{3}e^{x} + 2Be^{x} + 4Bxe^{x} + Bx^{2}e^{x}
 Plugging these into the original equation, we get:
 \begin{align*}
     & (6Axe^{x} + 6Ax^{2}e^{x} + Ax^{3}e^{x} + 2Be^{x} + 4Bxe^{x} + Bx^{2}e^{x}) \\
-    & \quad - 2(3Ax^{2}e^{x} + Ax^{3}e^{x} + 2Bxe^{x} + Bx^{2}e^{x}) + (Ax^{3}e^{x} + Bx^{2}e^{x} + C) = xe^{x} + 4
+    & \quad - 2(3Ax^{2}e^{x} + Ax^{3}e^{x} + 2Bxe^{x} + Bx^{2}e^{x}) + (Ax^{3}e^{x} + Bx^{2}e^{x}) = xe^{x} + 4
 \end{align*}
 \begin{align*}
     & 6Axe^{x} + 6Ax^{2}e^{x} + Ax^{3}e^{x} + 2Be^{x} + 4Bxe^{x} + Bx^{2}e^{x} \\
-    & \quad - 6Ax^{2}e^{x} - 2Ax^{3}e^{x} - 4Bxe^{x} - 2Bx^{2}e^{x} + Ax^{3}e^{x} + Bx^{2}e^{x} + C = xe^{x} + 4
+    & \quad - 6Ax^{2}e^{x} - 2Ax^{3}e^{x} - 4Bxe^{x} - 2Bx^{2}e^{x} + Ax^{3}e^{x} + Bx^{2}e^{x} = xe^{x} + 4
 \end{align*}
-\begin{align*}
-    & x^{3}e^{x}(A - 2A + A) + x^{2}e^{x}(6A - 2B + B - 2B + B) \\
-    & \quad + xe^{x}(6A + 2B - 4B) + e^{x}(2B + C) = xe^{x} + 4
-\end{align*}
-
 \[
-    6A - 2B = 0
+    6Axe^{x} + 2Be^{x} = xe^{x} + 4
 \]
 \[
-    2B + C = 4
-\]
-
-\[
-    A = \frac{1}{3}
+    6A = 1
 \]
 \[
-    B = \frac{1}{9}
+    A = \frac{1}{6}
 \]
 \[
-    C = \frac{26}{9}
+    2B = 0
 \]
-
+\[
+    B = 0
+\]
+Therefore, the particular solution is:
+\[
+y_p = \frac{1}{6}x^{3}e^{x}
+\]
+Now, we can find the general solution by adding the homogeneous and particular solutions:
+\[
+y = y_h + y_p
+\]
+\[
+y = c_1e^{x} + c_2xe^{x} + \frac{1}{6}x^{3}e^{x}
+\]
+Now, we can find the particular solution by plugging in the initial conditions:
+\[
+1 = c_1 + c_2(0)(1) + \frac{1}{6}(0)^{3}e^{0}
+\]
+\[
+1 = c_1
+\]
+\[
+    1 = c_1e^{0} + c_2e^{0} + c_2(0)e^{0} + \frac{0}{6} + \frac{0}{6}
+\]
+\[
+    1 = c_1 + c_2
+\]
+\[
+    1 = 1 + c_2
+\]
+\[
+    c_2 = 0
+\]
+Therefore, the particular solution is:
+\[
+y = e^{x} + \frac{1}{6}x^{3}e^{x}
+\]
+This is the solution to the nonhomogeneous equation.
 
 \end{document}
